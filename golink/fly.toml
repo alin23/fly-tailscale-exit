@@ -1,0 +1,11 @@
+app = "godark"
+
+[build]
+image = "ghcr.io/tailscale/golink:main"
+
+[deploy]
+strategy = "immediate"
+
+[mounts]
+source="godark_data"
+destination="/root"

@@ -76,7 +76,7 @@ Wrote config file fly.toml
 
 #### 9. Set the tailscale auth key in fly
 ```
-fly secrets set TAILSCALE_AUTH_KEY=[see step 4]
+fly secrets set TS_AUTHKEY=[see step 4]
 Secrets are staged for the first deployment
 ```
 

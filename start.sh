@@ -22,7 +22,7 @@ if [ ! -S /var/run/tailscale/tailscaled.sock ]; then
 fi
 
 until /app/tailscale up \
-    --auth-key=${TAILSCALE_AUTH_KEY} \
+    --auth-key=${TS_AUTHKEY} \
     --hostname=fly-${FLY_REGION} \
     --advertise-exit-node
 do
